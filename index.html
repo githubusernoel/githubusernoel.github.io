@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noel | Portfolio</title>
+  <meta name="description" content="Sample HTML portfolio for GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Noel<span>.</span></a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">SYSTEM ADMIN • WEB BUILDER • CLOUD SUPPORT</p>
+          <h1>Hi, I'm Noel.</h1>
+          <p class="lead">
+            I manage systems, networks, servers, and build practical internal tools that solve real office problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="status-card">
+            <h2>Quick Profile</h2>
+            <ul>
+              <li><strong>Role:</strong> System Administrator</li>
+              <li><strong>Focus:</strong> Network, Server, Security, Web Apps</li>
+              <li><strong>Experience:</strong> 5+ Years</li>
+              <li><strong>Based in:</strong> Philippines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="section-label">About Me</p>
+        <h2>Practical, hands-on, and focused on real results.</h2>
+        <p>
+          I work on infrastructure, firewall setup, server administration, cloud services, and internal business systems.
+          I also build simple web applications for operations, collections, monitoring, and reporting.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-section">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2>What I work with</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Infrastructure</h3>
+            <p>Ubuntu Server, NGINX, firewall configuration, VLANs, VPN, backups, SSL, DNS.</p>
+          </article>
+          <article class="card">
+            <h3>Cloud</h3>
+            <p>AWS Lightsail, S3, IAM, Route53, Google Cloud basics, storage and hosting setup.</p>
+          </article>
+          <article class="card">
+            <h3>Development</h3>
+            <p>HTML, CSS, JavaScript, Laravel, Blade, PostgreSQL, practical dashboards and admin tools.</p>
+          </article>
+          <article class="card">
+            <h3>Security</h3>
+            <p>Access control, validation, server hardening, policy awareness, and operational protection.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">Projects</p>
+        <h2>Sample projects</h2>
+        <div class="cards">
+          <article class="card project-card">
+            <h3>Payment Monitoring Dashboard</h3>
+            <p>A web dashboard for viewing, filtering, and reconciling payment transactions.</p>
+            <a href="#" class="text-link">Project Link</a>
+          </article>
+          <article class="card project-card">
+            <h3>Internal Messaging System</h3>
+            <p>A secure office-only messaging app with group chat, private chat, and attachments.</p>
+            <a href="#" class="text-link">Project Link</a>
+          </article>
+          <article class="card project-card">
+            <h3>Collection Monitoring Tool</h3>
+            <p>A business operations tool for monitoring collection activities and reports.</p>
+            <a href="#" class="text-link">Project Link</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section">
+      <div class="container narrow">
+        <p class="section-label">Contact</p>
+        <h2>Let's connect</h2>
+        <p>You can replace the details below with your real contact links.</p>
+        <div class="contact-box">
+          <p><strong>Email:</strong> yourname@email.com</p>
+          <p><strong>GitHub:</strong> github.com/githubusernoel</p>
+          <p><strong>Location:</strong> Philippines</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Noel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
