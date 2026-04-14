@@ -9,6 +9,13 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('is-scrolled', window.scrollY > 12);
 });
 
+window.addEventListener('load', () => {
+  document.querySelectorAll('.is-visible-on-load').forEach((item, index) => {
+    item.style.transitionDelay = `${index * 120}ms`;
+    item.classList.add('is-visible');
+  });
+});
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
