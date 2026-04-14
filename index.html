@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="page-orb orb-1"></div>
+  <div class="page-orb orb-2"></div>
+
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#home" class="logo">Noel<span>.</span></a>
@@ -26,7 +29,7 @@
   <main>
     <section id="home" class="hero">
       <div class="container hero-grid">
-        <div class="hero-text">
+        <div class="hero-text reveal active-on-load">
           <p class="eyebrow">SYSTEM ADMIN • WEB BUILDER • CLOUD SUPPORT</p>
           <h1>Hi, I'm Noel.</h1>
           <p class="lead">
@@ -38,7 +41,7 @@
           </div>
         </div>
 
-        <div class="hero-card">
+        <div class="hero-card reveal active-on-load">
           <div class="status-card">
             <h2>Quick Profile</h2>
             <ul>
@@ -52,8 +55,8 @@
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container narrow">
+    <section id="about" class="section reveal-section">
+      <div class="container narrow reveal">
         <p class="section-label">About Me</p>
         <h2>Practical, hands-on, and focused on real results.</h2>
         <p>
@@ -63,24 +66,26 @@
       </div>
     </section>
 
-    <section id="skills" class="section alt-section">
+    <section id="skills" class="section alt-section reveal-section">
       <div class="container">
-        <p class="section-label">Skills</p>
-        <h2>What I work with</h2>
-        <div class="cards">
-          <article class="card">
+        <div class="reveal">
+          <p class="section-label">Skills</p>
+          <h2>What I work with</h2>
+        </div>
+        <div class="cards stagger-grid">
+          <article class="card reveal">
             <h3>Infrastructure</h3>
             <p>Ubuntu Server, NGINX, firewall configuration, VLANs, VPN, backups, SSL, DNS.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Cloud</h3>
             <p>AWS Lightsail, S3, IAM, Route53, Google Cloud basics, storage and hosting setup.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Development</h3>
             <p>HTML, CSS, JavaScript, Laravel, Blade, PostgreSQL, practical dashboards and admin tools.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Security</h3>
             <p>Access control, validation, server hardening, policy awareness, and operational protection.</p>
           </article>
@@ -88,22 +93,24 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal-section">
       <div class="container">
-        <p class="section-label">Projects</p>
-        <h2>Sample projects</h2>
-        <div class="cards">
-          <article class="card project-card">
+        <div class="reveal">
+          <p class="section-label">Projects</p>
+          <h2>Sample projects</h2>
+        </div>
+        <div class="cards stagger-grid">
+          <article class="card project-card reveal">
             <h3>Payment Monitoring Dashboard</h3>
             <p>A web dashboard for viewing, filtering, and reconciling payment transactions.</p>
             <a href="#" class="text-link">Project Link</a>
           </article>
-          <article class="card project-card">
+          <article class="card project-card reveal">
             <h3>Internal Messaging System</h3>
             <p>A secure office-only messaging app with group chat, private chat, and attachments.</p>
             <a href="#" class="text-link">Project Link</a>
           </article>
-          <article class="card project-card">
+          <article class="card project-card reveal">
             <h3>Collection Monitoring Tool</h3>
             <p>A business operations tool for monitoring collection activities and reports.</p>
             <a href="#" class="text-link">Project Link</a>
@@ -112,12 +119,14 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt-section">
+    <section id="contact" class="section alt-section reveal-section">
       <div class="container narrow">
-        <p class="section-label">Contact</p>
-        <h2>Let's connect</h2>
-        <p>You can replace the details below with your real contact links.</p>
-        <div class="contact-box">
+        <div class="reveal">
+          <p class="section-label">Contact</p>
+          <h2>Let's connect</h2>
+          <p>You can replace the details below with your real contact links.</p>
+        </div>
+        <div class="contact-box reveal">
           <p><strong>Email:</strong> yourname@email.com</p>
           <p><strong>GitHub:</strong> github.com/githubusernoel</p>
           <p><strong>Location:</strong> Philippines</p>
