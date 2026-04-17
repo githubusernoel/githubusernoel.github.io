@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noel | Portfolio</title>
-  <meta name="description" content="Sample HTML portfolio for GitHub Pages.">
+  <meta name="description" content="Updated sample HTML portfolio for GitHub Pages with comprehensive skills.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- External stylesheet for site styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-orb orb-1"></div>
-  <div class="page-orb orb-2"></div>
-
+  <!-- Header navigation -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="#home" class="logo">Noel<span>.</span></a>
@@ -27,9 +26,10 @@
   </header>
 
   <main>
+    <!-- Hero section -->
     <section id="home" class="hero">
       <div class="container hero-grid">
-        <div class="hero-text reveal is-visible-on-load">
+        <div class="hero-text">
           <p class="eyebrow">SYSTEM ADMIN • WEB BUILDER • CLOUD SUPPORT</p>
           <h1>Hi, I'm Noel.</h1>
           <p class="lead">
@@ -40,8 +40,7 @@
             <a href="#contact" class="btn btn-secondary">Contact Me</a>
           </div>
         </div>
-
-        <div class="hero-card reveal is-visible-on-load float-card">
+        <div class="hero-card">
           <div class="status-card">
             <h2>Quick Profile</h2>
             <ul>
@@ -55,62 +54,70 @@
       </div>
     </section>
 
-    <section id="about" class="section reveal-section">
-      <div class="container narrow reveal">
+    <!-- About section -->
+    <section id="about" class="section">
+      <div class="container narrow">
         <p class="section-label">About Me</p>
-        <h2>Practical, hands-on, and focused on real results.</h2>
+        <h2>Practical, hands‑on, and focused on real results.</h2>
         <p>
-          I work on infrastructure, firewall setup, server administration, cloud services, and internal business systems.
-          I also build simple web applications for operations, collections, monitoring, and reporting.
+          I work on infrastructure, firewall setup, server administration, cloud services and internal business systems.
+          I also build simple web applications for operations, collections, monitoring and reporting.
         </p>
       </div>
     </section>
 
-    <section id="skills" class="section alt-section reveal-section">
+    <!-- Skills section -->
+    <section id="skills" class="section alt-section">
       <div class="container">
-        <div class="reveal">
-          <p class="section-label">Skills</p>
-          <h2>What I work with</h2>
-        </div>
-        <div class="cards stagger-grid">
-          <article class="card reveal">
-            <h3>Infrastructure</h3>
-            <p>Ubuntu Server, NGINX, firewall configuration, VLANs, VPN, backups, SSL, DNS.</p>
+        <p class="section-label">Skills</p>
+        <h2>What I work with</h2>
+        <div class="cards">
+          <!-- Infrastructure & Networking -->
+          <article class="card">
+            <h3>Infrastructure &amp; Networking</h3>
+            <p>Ubuntu Server, NGINX, firewall configuration, VLANs, VPN, backups, SSL, DNS, server provisioning and hardening.</p>
           </article>
-          <article class="card reveal">
-            <h3>Cloud</h3>
-            <p>AWS Lightsail, S3, IAM, Route53, Google Cloud basics, storage and hosting setup.</p>
+          <!-- Cloud Platforms -->
+          <article class="card">
+            <h3>Cloud Platforms</h3>
+            <p>AWS Lightsail, S3, IAM, Route53, Google Cloud basics, storage and hosting setup, domain management, GitHub Pages deployment.</p>
           </article>
-          <article class="card reveal">
-            <h3>Development</h3>
-            <p>HTML, CSS, JavaScript, Laravel, Blade, PostgreSQL, practical dashboards and admin tools.</p>
+          <!-- Development & Scripting -->
+          <article class="card">
+            <h3>Development &amp; Scripting</h3>
+            <p>HTML, CSS, JavaScript, Laravel, Blade, PostgreSQL, practical dashboards and admin tools, Git, GitHub, GitHub Pages and version control workflows.</p>
           </article>
-          <article class="card reveal">
-            <h3>Security</h3>
-            <p>Access control, validation, server hardening, policy awareness, and operational protection.</p>
+          <!-- Security & DevOps -->
+          <article class="card">
+            <h3>Security &amp; DevOps</h3>
+            <p>Access control, validation, server hardening, policy awareness, operational protection, CI/CD basics and infrastructure automation.</p>
+          </article>
+          <!-- UI/UX & Animation -->
+          <article class="card">
+            <h3>UI/UX &amp; Animation</h3>
+            <p>Responsive design, CSS animations and transitions, scroll‑triggered reveals, hover effects and interactive front‑end enhancements.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section reveal-section">
+    <!-- Projects section -->
+    <section id="projects" class="section">
       <div class="container">
-        <div class="reveal">
-          <p class="section-label">Projects</p>
-          <h2>Sample projects</h2>
-        </div>
-        <div class="cards stagger-grid">
-          <article class="card project-card reveal">
+        <p class="section-label">Projects</p>
+        <h2>Sample projects</h2>
+        <div class="cards">
+          <article class="card project-card">
             <h3>Payment Monitoring Dashboard</h3>
-            <p>A web dashboard for viewing, filtering, and reconciling payment transactions.</p>
+            <p>A web dashboard for viewing, filtering and reconciling payment transactions.</p>
             <a href="#" class="text-link">Project Link</a>
           </article>
-          <article class="card project-card reveal">
+          <article class="card project-card">
             <h3>Internal Messaging System</h3>
-            <p>A secure office-only messaging app with group chat, private chat, and attachments.</p>
+            <p>A secure office‑only messaging app with group chat, private chat and attachments.</p>
             <a href="#" class="text-link">Project Link</a>
           </article>
-          <article class="card project-card reveal">
+          <article class="card project-card">
             <h3>Collection Monitoring Tool</h3>
             <p>A business operations tool for monitoring collection activities and reports.</p>
             <a href="#" class="text-link">Project Link</a>
@@ -119,14 +126,13 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt-section reveal-section">
+    <!-- Contact section -->
+    <section id="contact" class="section alt-section">
       <div class="container narrow">
-        <div class="reveal">
-          <p class="section-label">Contact</p>
-          <h2>Let's connect</h2>
-          <p>You can replace the details below with your real contact links.</p>
-        </div>
-        <div class="contact-box reveal">
+        <p class="section-label">Contact</p>
+        <h2>Let's connect</h2>
+        <p>You can replace the details below with your real contact links.</p>
+        <div class="contact-box">
           <p><strong>Email:</strong> yourname@email.com</p>
           <p><strong>GitHub:</strong> github.com/githubusernoel</p>
           <p><strong>Location:</strong> Philippines</p>
@@ -135,12 +141,14 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <p>© <span id="year"></span> Noel. All rights reserved.</p>
+      <p>© <span id="year">2026</span> Noel. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- JavaScript for dynamic behaviour -->
   <script src="script.js"></script>
 </body>
 </html>
