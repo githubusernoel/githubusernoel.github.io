@@ -51,8 +51,9 @@ img { max-width: 100%; display: block; }
   -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
 }
 .orb {
-  position: fixed; border-radius: 50%; pointer-events: none; filter: blur(60px);
-  z-index: -1; opacity: 0.5; animation: drift 20s ease-in-out infinite;
+  position: fixed; border-radius: 50%; pointer-events: none; filter: blur(40px);
+  z-index: -1; opacity: 0.35; animation: drift 24s ease-in-out infinite;
+  will-change: transform;
 }
 .orb-1 { width: 360px; height: 360px; top: 10%; left: -80px; background: rgba(59,130,246,0.25); }
 .orb-2 { width: 300px; height: 300px; right: -60px; top: 40%; background: rgba(34,211,238,0.2); animation-delay: -6s; }
@@ -203,9 +204,7 @@ img { max-width: 100%; display: block; }
 /* Hero card */
 .hero-card, .card, .contact-box, .glass, .timeline-content, .cert {
   position: relative; overflow: hidden;
-  background: var(--card);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  background: rgba(16, 26, 46, 0.82);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -262,13 +261,13 @@ img { max-width: 100%; display: block; }
 @keyframes bounce { 0%,100%{ transform: translateX(-50%) translateY(0);} 50%{ transform: translateX(-50%) translateY(8px);} }
 
 /* ---------- Sections ---------- */
-.section { padding: 90px 0; }
+.section { padding: 90px 0; content-visibility: auto; contain-intrinsic-size: 1px 900px; }
 .alt-section { background: linear-gradient(180deg, transparent, rgba(255,255,255,0.015), transparent); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section-label { text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.72rem; color: var(--accent-2); font-weight: 700; margin: 0 0 6px; }
 
 /* ---------- Reveal ---------- */
-.reveal { opacity: 0; transform: translateY(34px); transition: opacity 0.8s cubic-bezier(.2,.8,.2,1), transform 0.8s cubic-bezier(.2,.8,.2,1); will-change: opacity, transform; }
-.reveal.is-visible, .reveal.is-visible-on-load { opacity: 1; transform: translateY(0); }
+.reveal { opacity: 0; transform: translateY(34px); transition: opacity 0.7s cubic-bezier(.2,.8,.2,1), transform 0.7s cubic-bezier(.2,.8,.2,1); will-change: opacity, transform; }
+.reveal.is-visible, .reveal.is-visible-on-load { opacity: 1; transform: translateY(0); will-change: auto; }
 
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 34px; }

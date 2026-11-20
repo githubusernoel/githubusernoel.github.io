@@ -291,13 +291,22 @@ if (typedName) {
   // keep static name; no-op for stability
 }
 
-/* ===================== Parallax orbs on mouse ===================== */
+/* ===================== Parallax orbs on mouse (throttled) ===================== */
 if (window.matchMedia('(pointer:fine)').matches) {
+  let parallaxPending = false;
+  let lastEvent = null;
   window.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 20;
-    const y = (e.clientY / window.innerHeight - 0.5) * 20;
-    $$('.orb').forEach((o, i) => {
-      o.style.transform = `translate(${x * (i + 1) * 0.4}px, ${y * (i + 1) * 0.4}px)`;
+    lastEvent = e;
+    if (parallaxPending) return;
+    parallaxPending = true;
+    requestAnimationFrame(() => {
+      parallaxPending = false;
+      if (!lastEvent) return;
+      const x = (lastEvent.clientX / window.innerWidth - 0.5) * 20;
+      const y = (lastEvent.clientY / window.innerHeight - 0.5) * 20;
+      $$('.orb').forEach((o, i) => {
+        o.style.transform = `translate(${x * (i + 1) * 0.4}px, ${y * (i + 1) * 0.4}px)`;
+      });
     });
   });
 }
